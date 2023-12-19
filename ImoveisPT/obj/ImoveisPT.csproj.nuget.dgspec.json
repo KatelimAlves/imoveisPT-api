@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Katelim\\OneDrive - Maieutica\\IntegracaoSistemasAplicacoes\\ImoveisPT_Services\\imoveisPT-api\\ImoveisPT\\ImoveisPT.csproj": {}
+    "C:\\MVC\\KatelimAlves\\imoveisPT-api\\ImoveisPT\\ImoveisPT.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Katelim\\OneDrive - Maieutica\\IntegracaoSistemasAplicacoes\\ImoveisPT_Services\\imoveisPT-api\\ImoveisPT\\ImoveisPT.csproj": {
+    "C:\\MVC\\KatelimAlves\\imoveisPT-api\\ImoveisPT\\ImoveisPT.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Katelim\\OneDrive - Maieutica\\IntegracaoSistemasAplicacoes\\ImoveisPT_Services\\imoveisPT-api\\ImoveisPT\\ImoveisPT.csproj",
+        "projectUniqueName": "C:\\MVC\\KatelimAlves\\imoveisPT-api\\ImoveisPT\\ImoveisPT.csproj",
         "projectName": "ImoveisPT",
-        "projectPath": "C:\\Users\\Katelim\\OneDrive - Maieutica\\IntegracaoSistemasAplicacoes\\ImoveisPT_Services\\imoveisPT-api\\ImoveisPT\\ImoveisPT.csproj",
-        "packagesPath": "C:\\Users\\Katelim\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Katelim\\OneDrive - Maieutica\\IntegracaoSistemasAplicacoes\\ImoveisPT_Services\\imoveisPT-api\\ImoveisPT\\obj\\",
+        "projectPath": "C:\\MVC\\KatelimAlves\\imoveisPT-api\\ImoveisPT\\ImoveisPT.csproj",
+        "packagesPath": "C:\\Users\\Daniel Soares\\.nuget\\packages\\",
+        "outputPath": "C:\\MVC\\KatelimAlves\\imoveisPT-api\\ImoveisPT\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Katelim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Daniel Soares\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -46,7 +46,7 @@
           "dependencies": {
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
-              "version": "[6.0.0, )"
+              "version": "[6.0.25, )"
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
@@ -76,7 +76,7 @@
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.2.3, )"
+              "version": "[6.5.0, )"
             }
           },
           "imports": [
@@ -98,7 +98,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
