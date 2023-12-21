@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ImoveisPT.Migrations
 {
     [DbContext(typeof(ImoveisPTContext))]
-    [Migration("20231219192554_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20231221114257_AddNameToUser")]
+    partial class AddNameToUser
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -118,6 +118,12 @@ namespace ImoveisPT.Migrations
 
                     b.Property<bool>("EmailConfirmed")
                         .HasColumnType("bit");
+
+                    b.Property<string>("FirstName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LastName")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("LockoutEnabled")
                         .HasColumnType("bit");
