@@ -21,7 +21,7 @@ namespace ImoveisPT.Controllers
         }
 
         // GET: api/ApplicationUsers
-        [Authorize]
+        //[Authorize]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<GetApplicationUserViewModel>>> GetApplicationUsers()
         {
@@ -42,7 +42,7 @@ namespace ImoveisPT.Controllers
         }
 
         // GET: api/ApplicationUsers/5
-        [Authorize]
+        //[Authorize]
         [HttpGet("{id}")]
         public async Task<ActionResult<GetApplicationUserViewModel>> GetApplicationUser(string id)
         {
@@ -167,7 +167,14 @@ namespace ImoveisPT.Controllers
                 favoriteViewModels.Add(favoriteViewModel);
             }
 
-            return new GetApplicationUserViewModel(applicationUser.Id, applicationUser.UserName, applicationUser.Email, advertisementViewModels, favoriteViewModels);
+            return new GetApplicationUserViewModel(
+                applicationUser.Id, 
+                applicationUser.UserName, 
+                applicationUser.Email,
+                applicationUser.FirstName,
+                applicationUser.LastName,
+                advertisementViewModels, 
+                favoriteViewModels);
         }
     }
 }
