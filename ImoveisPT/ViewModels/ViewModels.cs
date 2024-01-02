@@ -35,6 +35,7 @@ namespace ImoveisPT.ViewModels
     int? Bathrooms,
     decimal? Area,
     string ContactPhoneNumber,
+    DateTime CreatedAt,
     string PropertyType,
     string Status,
     string? Picture

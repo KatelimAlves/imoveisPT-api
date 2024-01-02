@@ -84,8 +84,15 @@ namespace ImoveisPT.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> PutAdvertisement(int id, UpdateAdvertisementViewModel advertisementViewModel)
         {
+            var userName = _acessor.HttpContext.User.Identity.Name;
+            var userId = await _context.ApplicationUsers
+                .Where(a => a.UserName == userName)
+                .Select(a => a.Id)
+                .FirstOrDefaultAsync();
+
             var advertisement = await _context.Advertisements
                 .Where(advertisement => advertisement.Id == id)
+                .Where(advertisement => advertisement.UserId == userId)
                 .FirstOrDefaultAsync();
 
             if (advertisement is null) { return NotFound();  }
@@ -199,6 +206,7 @@ namespace ImoveisPT.Controllers
                 advertisement.Bathrooms,
                 advertisement.Area,
                 advertisement.ContactPhoneNumber,
+                advertisement.CreatedAt,
                 /*advertisement.UserId,*/
                 advertisement.PropertyType.ToString(),
                 advertisement.Status.ToString(),

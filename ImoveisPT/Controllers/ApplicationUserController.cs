@@ -21,7 +21,7 @@ namespace ImoveisPT.Controllers
         }
 
         // GET: api/ApplicationUsers
-        //[Authorize]
+        [Authorize]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<GetApplicationUserViewModel>>> GetApplicationUsers()
         {
@@ -42,7 +42,7 @@ namespace ImoveisPT.Controllers
         }
 
         // GET: api/ApplicationUsers/5
-        //[Authorize]
+        [Authorize]
         [HttpGet("{id}")]
         public async Task<ActionResult<GetApplicationUserViewModel>> GetApplicationUser(string id)
         {
@@ -148,6 +148,7 @@ namespace ImoveisPT.Controllers
                         advertisement.Bathrooms,
                         advertisement.Area,
                         advertisement.ContactPhoneNumber,
+                        advertisement.CreatedAt,
                         advertisement.PropertyType.ToString(),
                         advertisement.Status.ToString(),
                         advertisement.Picture);
