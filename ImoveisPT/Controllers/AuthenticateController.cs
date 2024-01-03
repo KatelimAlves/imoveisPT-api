@@ -39,6 +39,8 @@ namespace ImoveisPT.Controllers
                 var authClaims = new List<Claim>
                 {
                     new Claim(ClaimTypes.Name, user.UserName),
+                    new Claim("userId", user.Id),
+                    new Claim("firstName", user.FirstName),
                     new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
                 };
 
