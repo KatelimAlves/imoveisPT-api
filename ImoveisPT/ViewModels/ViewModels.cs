@@ -4,8 +4,22 @@ namespace ImoveisPT.ViewModels
 {
 
     // ApplicationUsers
-    public record GetApplicationUserViewModel(string Id, string UserName, string Email, List<GetAdvertisementViewModel> Advertisements, List<GetFavoriteViewModel> Favorites);
-    public record UpdateApplicationUserViewModel(string UserName, string Email, List<CreateFavoriteViewModel> Favorites);
+    public record GetApplicationUserViewModel(
+        string Id, 
+        string UserName, 
+        string Email, 
+        string FirstName,
+        string LastName,
+        List<GetAdvertisementViewModel> Advertisements, 
+        List<GetFavoriteViewModel> Favorites);
+
+    public record UpdateApplicationUserViewModel(
+        string UserName, 
+        string Email,
+        string FirstName,
+        string LastName,
+        List<CreateFavoriteViewModel> Favorites);
+
 
     // Advertisements
     public record GetAdvertisementViewModel(
@@ -21,6 +35,7 @@ namespace ImoveisPT.ViewModels
     int? Bathrooms,
     decimal? Area,
     string ContactPhoneNumber,
+    DateTime CreatedAt,
     string PropertyType,
     string Status,
     string? Picture

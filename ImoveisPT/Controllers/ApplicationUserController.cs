@@ -148,6 +148,7 @@ namespace ImoveisPT.Controllers
                         advertisement.Bathrooms,
                         advertisement.Area,
                         advertisement.ContactPhoneNumber,
+                        advertisement.CreatedAt,
                         advertisement.PropertyType.ToString(),
                         advertisement.Status.ToString(),
                         advertisement.Picture);
@@ -167,7 +168,14 @@ namespace ImoveisPT.Controllers
                 favoriteViewModels.Add(favoriteViewModel);
             }
 
-            return new GetApplicationUserViewModel(applicationUser.Id, applicationUser.UserName, applicationUser.Email, advertisementViewModels, favoriteViewModels);
+            return new GetApplicationUserViewModel(
+                applicationUser.Id, 
+                applicationUser.UserName, 
+                applicationUser.Email,
+                applicationUser.FirstName,
+                applicationUser.LastName,
+                advertisementViewModels, 
+                favoriteViewModels);
         }
     }
 }

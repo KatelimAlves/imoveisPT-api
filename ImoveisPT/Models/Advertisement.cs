@@ -12,6 +12,7 @@ namespace ImoveisPT.Models
 
     public enum PropertyType
     {
+        Default,
         Apartamento,
         Armazém,
         Escritório,
