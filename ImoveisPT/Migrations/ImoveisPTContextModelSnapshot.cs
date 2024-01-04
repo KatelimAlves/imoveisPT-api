@@ -95,7 +95,7 @@ namespace ImoveisPT.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Advertisements");
+                    b.ToTable("Advertisements", (string)null);
                 });
 
             modelBuilder.Entity("ImoveisPT.Models.ApplicationUser", b =>
@@ -184,7 +184,7 @@ namespace ImoveisPT.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Favorites");
+                    b.ToTable("Favorites", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
